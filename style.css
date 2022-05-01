@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+header{
+    height: 100px;
+    width: 100%;
+    /* background-image: linear-gradient(to right, #9c0000,#27297e,#000000); */
+    background-color: #27297e;
+}
+#logoBox{
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: rgb(216, 216, 245);
+   
+}
+h1{
+    color: #27297e;
+    float: left;
+    line-height: 100px;
+    padding-right: 0;
+    padding-left: 15px;
+    margin-left: 20px;
+}
+#logo{
+    height: 100%;
+    border-radius:30% ;
+    margin-left: 50px;
+}
+nav{
+    width: 70%;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+    margin-left: 70px;
+    
+}
+nav a:hover{
+    background-color: #ffffff;
+    color: #27297e;
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: #27297e;
+    border-top:3px solid #ffffff;
+    animation-name: changeBackground;
+    animation-duration: 5s;
+    animation-iteration-count:infinite ;
+}
+aside{
+width: 30%;
+height: 100%;
+background-color: #ffffff;
+text-align: center;
+float: left;
+}
+aside img{
+    width: 80%;
+    margin-top: 30px;
+    
+}
+aside h2{
+    padding-right: 0;
+    padding-left: 20px;
+    border-bottom: #ff0000;
+    border-bottom: solid;
+    padding: 20px;
+}
+@keyframes changeBackground{
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: black;
+    }
+    90%{
+        background-color: blue;
+    }
+    100%{
+        background-color: white;
+    }
+}
+#article{
+    width: 70%;
+    height: 450px;
+    float: right;
+    position: relative;
+}
+#box{
+    text-align: center;
+    width: 400px;
+    height: 180px;
+    position: absolute;
+    background-color: rgb(216, 216, 245);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#box h3{
+    border-bottom: solid ;
+    padding: 15px;
+}
+#contact-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+margin-top: 15px;
+}
+#contact-box img{
+width: 45px;
+border-bottom: 3px black double;
+padding-bottom: 15px;
+padding-left: 3px;
+padding-right: 3px;
+}
+#contact-box img:hover{
+    width: 60px;
+    border-bottom: 2px solid rgb(218, 47, 47);
+}
+@keyframes changeBackground{
+    0%{background-color: rgb(255, 255, 255);}
+    20%{background-color: rgb(139, 156, 201);}
+    40%{background-color: rgb(85, 104, 156);}
+    60%{background-color: rgb(71, 93, 145)}
+    80%{background-color: rgb(42, 52, 109);}
+}
+@media (min-width:0px ) and (max-width:850px){
+    #logoBox{
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+    }
+    h1{
+        display: none;  
+    }
+    #logo{
+        height: 40%;
+    }
+    nav{display: none;}
+    aside{
+        height: 100vh;
+        width: 100%;
+    }
+    #article{
+       display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media only screen and(min-width:940px)and(max-width:1070){ 
+    #logoBox{ width: 35%;}
+    #article{width: 65%;}
+    #aside{width: 35%;}
+}
+@media only screen and(max-width:940px)and(min-width:918px) {#logoBox{width:40%;} }
+@media only screen and(max-width:917px){
+    #header,main{ height: auto;}
+    #logoBox{
+    width: 100%;
+    text-align: center;}
+    #h1{ float: none;}
+    #logo{float: none;}
+    #span a{text-decoration: none;}
+    #nav{width: 100%;}
+    #aside{width: 100%;}
+    #article{height: 230px; width:100%;}
+}
+@media only screen and(max-width:500px){
+ #nav li{
+     display: block;
+     width: 100%;
+ }   
+}
+@media print {
+    nav{
+        display: none;
+    }
+} */
